@@ -58,8 +58,8 @@
 
 // * DIR_FS_* = Filesystem directories (local/physical)
   //the following path is a COMPLETE path to your Zen Cart files. eg: /var/www/vhost/accountname/public_html/store/
-  define('DIR_FS_ADMIN', '/home/cosmosco/public_html/shopping_cart/admin_area/');
-  define('DIR_FS_CATALOG', '/home/cosmosco/public_html/shopping_cart/');
+  define('DIR_FS_ADMIN', '/home/content/49/8685149/html/shopping_cart/admin_area/');
+  define('DIR_FS_CATALOG', '/home/content/49/8685149/html/shopping_cart/');
 
   define('DIR_FS_CATALOG_LANGUAGES', DIR_FS_CATALOG . 'includes/languages/');
   define('DIR_FS_CATALOG_IMAGES', DIR_FS_CATALOG . 'images/');
@@ -72,10 +72,10 @@
 // define our database connection
   define('DB_TYPE', 'mysql');
   define('DB_PREFIX', 'zen_');
-  define('DB_SERVER', 'localhost');
-  define('DB_SERVER_USERNAME', 'cosmosco_lms');
-  define('DB_SERVER_PASSWORD', 'jmk26040');
-  define('DB_DATABASE', 'cosmosco_lms');
+  define('DB_SERVER', 'cosmoscolms.db.8685149.hostedresource.com');
+  define('DB_SERVER_USERNAME', 'cosmoscolms');
+  define('DB_SERVER_PASSWORD', 'tTTS9wVUUW7ZjY');
+  define('DB_DATABASE', 'cosmoscolms');
   define('USE_PCONNECT', 'false');
   define('STORE_SESSIONS', 'db');
   // for STORE_SESSIONS, use 'db' for best support, or '' for file-based storage
@@ -86,6 +86,6 @@
   // or webserver user has write privileges (chmod 666 or 777). We recommend using the "cache" folder inside the Zen Cart folder
   // ie: /path/to/your/webspace/public_html/zen/cache   -- leave no trailing slash  
   define('SQL_CACHE_METHOD', 'none'); 
-  define('DIR_FS_SQL_CACHE', '/home/cosmosco/public_html/shopping_cart/cache');
+  define('DIR_FS_SQL_CACHE', '/home/content/49/8685149/html/shopping_cart/cache');
 
 // EOF
