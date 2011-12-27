@@ -72,10 +72,10 @@
 // define our database connection
   define('DB_TYPE', 'mysql');
   define('DB_PREFIX', 'zen_');
-  define('DB_SERVER', 'cosmoscolms.db.8685149.hostedresource.com');
-  define('DB_SERVER_USERNAME', 'cosmoscolms');
-  define('DB_SERVER_PASSWORD', 'tTTS9wVUUW7ZjY');
-  define('DB_DATABASE', 'cosmoscolms');
+  define('DB_SERVER', 'cosmoscourseslms.db.8685149.hostedresource.com');
+  define('DB_SERVER_USERNAME', 'cosmoscourseslms');
+  define('DB_SERVER_PASSWORD', 'K3RgmwVqh6');
+  define('DB_DATABASE', 'cosmoscourseslms');
   define('USE_PCONNECT', 'false');
   define('STORE_SESSIONS', 'db');
   // for STORE_SESSIONS, use 'db' for best support, or '' for file-based storage
