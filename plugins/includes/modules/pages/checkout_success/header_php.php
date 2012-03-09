@@ -107,9 +107,9 @@ if ($flag_global_notifications != '1') {
   $z_paypal_order = $db->Execute($z_paypal_query);
   
 		//set POST variables
-		$url = 'http://cosmosconsultingllc.com/LMS/api/course-purchased.php';
+		$url = 'http://zenithperformancesolutions.com/LMS/api/course-purchased.php';
 		$fields = array(
-		            'store'=>urlencode("Cosmos"),
+		            'store'=>urlencode("ZPS"),
 		            'orderid'=>urlencode($orders_id),
 		            'invoice_number'=>urlencode($z_paypal_order->fields['invoice']),
 					'first_name'=>urlencode($z_paypal_order->fields['first_name']),
@@ -146,7 +146,7 @@ if ($flag_global_notifications != '1') {
 		//close connection
 		curl_close($ch);
 
-mail("ryan@rammons.net", "from ZC: got past the cURL section", $fields_string, "From: admin@cosmosconsultingllc.com");
+//mail("ryan@rammons.net", "from ZC: got past the cURL section", $fields_string, "From: admin@zenithperformancesolutions.com");
 
 
 
