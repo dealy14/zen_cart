@@ -14,8 +14,8 @@
 // Define the webserver and path parameters
   // HTTP_SERVER is your Main webserver: eg-http://www.your_domain.com
   // HTTPS_SERVER is your Secure webserver: eg-https://www.your_domain.com
-  define('HTTP_SERVER', 'http://cosmosconsultingllc.com');
-  define('HTTPS_SERVER', 'https://cosmosconsultingllc.com');
+  define('HTTP_SERVER', 'http://compliancefactors.biz');
+  define('HTTPS_SERVER', 'https://compliancefactors.biz');
 
   // Use secure webserver for checkout procedure?
   define('ENABLE_SSL', 'false');
@@ -23,8 +23,8 @@
 // NOTE: be sure to leave the trailing '/' at the end of these lines if you make changes!
 // * DIR_WS_* = Webserver directories (virtual/URL)
   // these paths are relative to top of your webspace ... (ie: under the public_html or httpdocs folder)
-  define('DIR_WS_CATALOG', '/shopping_cart/');
-  define('DIR_WS_HTTPS_CATALOG', '/shopping_cart/');
+  define('DIR_WS_CATALOG', '/');
+  define('DIR_WS_HTTPS_CATALOG', '/');
 
   define('DIR_WS_IMAGES', 'images/');
   define('DIR_WS_INCLUDES', 'includes/');
@@ -39,7 +39,7 @@
 
 // * DIR_FS_* = Filesystem directories (local/physical)
   //the following path is a COMPLETE path to your Zen Cart files. eg: /var/www/vhost/accountname/public_html/store/
-  define('DIR_FS_CATALOG', '/home/content/49/8685149/html/shopping_cart/');
+  define('DIR_FS_CATALOG', '/home/content/d/a/v/davidealy/html/cosmos-content/');
 
   define('DIR_FS_DOWNLOAD', DIR_FS_CATALOG . 'download/');
   define('DIR_FS_DOWNLOAD_PUBLIC', DIR_FS_CATALOG . 'pub/');
@@ -50,10 +50,10 @@
 // define our database connection
   define('DB_TYPE', 'mysql');
   define('DB_PREFIX', 'zen_');
-  define('DB_SERVER', 'cosmoscourseslms.db.8685149.hostedresource.com');
-  define('DB_SERVER_USERNAME', 'cosmoscourseslms');
+  define('DB_SERVER', 'safetytraining.db.8609376.hostedresource.com');
+  define('DB_SERVER_USERNAME', 'safetytraining');
   define('DB_SERVER_PASSWORD', 'K3RgmwVqh6');
-  define('DB_DATABASE', 'cosmoscourseslms');
+  define('DB_DATABASE', 'safetytraining');
   define('USE_PCONNECT', 'false');
   define('STORE_SESSIONS', 'db');
   // for STORE_SESSIONS, use 'db' for best support, or '' for file-based storage
@@ -64,6 +64,6 @@
   // or webserver user has write privileges (chmod 666 or 777). We recommend using the "cache" folder inside the Zen Cart folder
   // ie: /path/to/your/webspace/public_html/zen/cache   -- leave no trailing slash  
   define('SQL_CACHE_METHOD', 'none'); 
-  define('DIR_FS_SQL_CACHE', '/home/content/49/8685149/html/shopping_cart/cache');
+  define('DIR_FS_SQL_CACHE', '/home/content/d/a/v/davidealy/html/cosmos-content/cache');
 
 // EOF

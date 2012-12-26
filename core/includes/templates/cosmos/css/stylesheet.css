@@ -15,12 +15,13 @@ body {
 	/*color: #000000;*/
 
 
-	background-image: url(../images/cosmic2.jpg);
-	background-color: #000000;
+	/*background-image: url(../images/cosmic2.jpg);*/
+	background-color: #ffffff;
 	background-repeat: no-repeat;
 }}
 
 a img {border: none; }
+img {border: none; }
 
 a:link, #navEZPagesTOC ul li a {
 	color: #3300FF;
@@ -186,7 +187,7 @@ HR {
 	background-color:transparent;
 	/*background-color: #ffffff;*/
 	text-align: left;
-	width: 960px;
+	width: 910px;
 	vertical-align: top;
 	/*border: 1px solid #9a9a9a;*/
 	margin: 0em;
@@ -201,10 +202,10 @@ HR {
 	}
 
 #logoWrapper{
-	background-image: url(../images/header_bg.jpg);
+	/*background-image: url(../images/header_bg.jpg);*/
 	background-repeat: repeat-x;
 	background-color: #ffffff;
-	height:75px;
+	height:150px;
 	}
 
 #navColumnOneWrapper, #navColumnTwoWrapper, #mainWrapper {
@@ -560,7 +561,7 @@ h3.rightBoxHeading, h3.rightBoxHeading a {
 .leftBoxContainer, .rightBoxContainer {
 	margin: 0em;
 	border: 1px solid #9a9a9a;
-	border-bottom: 5px solid #333333;
+	border-bottom: 5px solid #87BE4B;
 	margin-top: 1.5em;
 	}
 
@@ -581,7 +582,10 @@ h3.leftBoxHeading a:hover, h3.rightBoxHeading a:hover {
 .centeredContent, TH, #cartEmptyText, #cartBoxGVButton, #cartBoxEmpty, #cartBoxVoucherBalance, #navCatTabsWrapper, #navEZPageNextPrev, #bannerOne, #bannerTwo, #bannerThree, #bannerFour, #bannerFive, #bannerSix, #siteinfoLegal, #siteinfoCredits, #siteinfoStatus, #siteinfoIP, .center, .cartRemoveItemDisplay, .cartQuantityUpdate, .cartQuantity, .cartTotalsDisplay, #cartBoxGVBalance, .leftBoxHeading, .centerBoxHeading,.rightBoxHeading, .productListing-data, .accountQuantityDisplay, .ratingRow, LABEL#textAreaReviews, #productMainImage, #reviewsInfoDefaultProductImage, #productReviewsDefaultProductImage, #reviewWriteMainImage, .centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew, .gvBal, .attribImg {
 	text-align: center;
 	}
-
+.productListing-ItemName{
+   text-align: left;
+}
+   
 #bestsellers .wrapper {
 	margin: 0em 0em 0em 1.5em;
 	}

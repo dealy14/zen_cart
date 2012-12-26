@@ -11,7 +11,7 @@ define('TEXT_MAIN','This is the main define statement for the page for english w
 
 // Showcase vs Store
 if (STORE_STATUS == '0') {
-  define('TEXT_GREETING_GUEST', 'Welcome <span class="greetUser">Guest!</span> Would you like to <a href="%s">log yourself in</a>?');
+  define('TEXT_GREETING_GUEST', 'Welcome <span class="greetUser">Guest!</span> Would you like to <a href="%s">log in</a> and explore the site?');
 } else {
   define('TEXT_GREETING_GUEST', 'Welcome, please enjoy our online showcase.');
 }
@@ -49,10 +49,10 @@ if ( ($category_depth == 'products') || (zen_check_url_get_terms()) ) {
 } elseif ($category_depth == 'top') {
   // This section deals with the "home" page at the top level with no options/products selected
   /*Replace this text with the headline you would like for your shop. For example: 'Welcome to My SHOP!'*/
-  define('HEADING_TITLE', 'Welcome to Cosmos Consulting LearnCenter Shop!');
+  define('HEADING_TITLE', 'Welcome to Compliance Factors!');
 } elseif ($category_depth == 'nested') {
   // This section deals with displaying a subcategory
   /*Replace this line with the headline you would like for your shop. For example: 'Welcome to My SHOP!'*/
-  define('HEADING_TITLE', 'Welcome to Cosmos Consulting LearnCenter Shop!'); 
+  define('HEADING_TITLE', 'Welcome to Compliance Factors!');
 }
 ?>

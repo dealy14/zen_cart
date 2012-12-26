@@ -88,28 +88,29 @@ if ($flag_global_notifications != '1') {
                                   'products_id'=>$products->fields['products_id'],
                                   'products_name'=>$products->fields['products_name']);
     
-	
-	//temp fix
+	//--BEGIN--Temp fix to generate course list array with attributes
 	
 	$course_array[] = array('counter'=>$counter,
                                   'courseid'=>$products->fields['products_model'],
                                   'coursename'=>$products->fields['products_name'],
 								  'courseprice'=>$products->fields['products_price']);
-
+	//--END--Temp fix to generate course list array with attributes
+	
 	$counter++;
     $products->MoveNext();
   }
 }
-
+ 
+  		
 //get the rest of the order and user info from zen_paypal table
   $z_paypal_query = "SELECT * FROM zen_paypal WHERE order_id = :ordersID";
   $z_paypal_query = $db->bindVars($z_paypal_query, ':ordersID', $orders_id, 'integer');
   $z_paypal_order = $db->Execute($z_paypal_query);
   
 		//set POST variables
-		$url = 'http://cosmosconsultingllc.com/LMS/api/course-purchased.php';
+		$url = 'http://compliancefactors.biz/courses/api/course-purchased.php';
 		$fields = array(
-		            'store'=>urlencode("Cosmos"),
+		            'store'=>urlencode("Compliance Factors Content Provider"),
 		            'orderid'=>urlencode($orders_id),
 		            'invoice_number'=>urlencode($z_paypal_order->fields['invoice']),
 					'first_name'=>urlencode($z_paypal_order->fields['first_name']),
@@ -125,8 +126,18 @@ if ($flag_global_notifications != '1') {
 					'ip'=>urlencode(""),
 					'payment_date'=>urlencode(""), /*("{CURDATE()}"),*/
 					
-					'course_info'=>urlencode($course_array)
+					'course_info'=>urlencode(serialize($course_array))
 		        );
+		
+		
+// DEBUG code to email results of course_info array
+/*
+		$course_ser = serialize($course_array);
+		$course_enc = urlencode($course_ser);
+		mail("ryan@rammons.net", "from ZC: serialized & encoded course array",
+			"serialized: " . $course_ser . "\nencoded: " . $course_enc, "From: admin@cosmosconsultingllc.com");
+*/
+		
 		
 		//url-ify the data for the POST
 		foreach($fields as $key=>$value) { $fields_string .= $key.'='.$value.'&'; }
@@ -146,7 +157,8 @@ if ($flag_global_notifications != '1') {
 		//close connection
 		curl_close($ch);
 
-mail("ryan@rammons.net", "from ZC: got past the cURL section", $fields_string, "From: admin@cosmosconsultingllc.com");
+
+//mail("ryan@rammons.net", "from ZC: got past the cURL section", $fields_string, "From: admin@cosmosconsultingllc.com");
 
 
 
@@ -174,35 +186,41 @@ mail("ryan@rammons.net", "from ZC: got past the cURL section", $fields_string, "
 // include template specific file name defines
 $define_page = zen_get_file_directory(DIR_WS_LANGUAGES . $_SESSION['language'] . '/html_includes/', FILENAME_DEFINE_CHECKOUT_SUCCESS, 'false');
 
-} else {
-  echo '<html><head>';
-  echo '<script type="text/javascript">
-<!--
-theTimer = 0;
-timeOut = 12;
+} 
 
-function submit_form()
-{
-  theTimer = setTimeout("submit_form();", 100);
-  if (timeOut > 0) {
-    timeOut -= 1;
-  }
-  else
-  {
-    clearTimeout(theTimer);
-    document.getElementById("submitbutton").disabled = true;
-    document.forms.formpost.submit();
-  }
-}
-function continueClick()
-{
-  clearTimeout(theTimer);
-  return true;
-}
+else {
+  ?>
+  	<html><head>
+  	<script type="text/javascript">
+	<!--
+	theTimer = 0;
+	timeOut = 12;
+	
+	function submit_form()
+	{
+	  theTimer = setTimeout("submit_form();", 100);
+	  if (timeOut > 0) {
+	    timeOut -= 1;
+	  }
+	  else
+	  {
+	    clearTimeout(theTimer);
+	    document.getElementById("submitbutton").disabled = true;
+	    document.forms.formpost.submit();
+	  }
+	}
+	function continueClick()
+	{
+	  clearTimeout(theTimer);
+	  return true;
+	}
+	
+	submit_form();
+	//-->
+	</script>
+	</head>
+<?php
 
-submit_form();
-//-->
-</script>' . "\n" . '</head>';
   echo '<body style="text-align: center; min-width: 600px;">' . "\n" . '<div style="text-align: center;  width: 600px;  margin-left: auto;  margin-right: auto; margin-top:20%;"><p>This page will automatically redirect you back to ' . STORE_NAME . ' for your order confirmation details.<br />If you are not redirected within 5 seconds, please click the button below to continue.</p>';
   echo "\n" . '<form action="' . zen_href_link(FILENAME_CHECKOUT_SUCCESS, zen_get_all_get_params(array('action')), 'SSL', false) . '" method="post" name="formpost" />' . "\n";
   reset($_POST);

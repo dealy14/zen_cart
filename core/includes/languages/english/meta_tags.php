@@ -8,13 +8,13 @@
  */
 
 // page title
-define('TITLE', 'Zen Cart!');
+define('TITLE', 'Compliance Factors');
 
 // Site Tagline
-define('SITE_TAGLINE', 'The Art of E-commerce');
+define('SITE_TAGLINE', '');
 
 // Custom Keywords
-define('CUSTOM_KEYWORDS', 'ecommerce, open source, shop, online shopping');
+define('CUSTOM_KEYWORDS', 'compliance factors');
 
 // Home Page Only:
   define('HOME_PAGE_META_DESCRIPTION', '');
