@@ -8,13 +8,13 @@
  */
 
 // page title
-define('TITLE', 'Compliance Factors');
+define('TITLE', 'ComplianceFactors');
 
 // Site Tagline
 define('SITE_TAGLINE', '');
 
 // Custom Keywords
-define('CUSTOM_KEYWORDS', 'compliance factors');
+define('CUSTOM_KEYWORDS', 'compliancefactors');
 
 // Home Page Only:
   define('HOME_PAGE_META_DESCRIPTION', '');

@@ -34,7 +34,7 @@ a:visited {
 	}
 
 a:hover, #navEZPagesTOC ul li a:hover, #navMain ul li a:hover, #navSupp ul li a:hover, #navCatTabs ul li a:hover {
-	color: #009900;
+	color: #f00;
 	}
 
 a:active {
@@ -617,11 +617,20 @@ A.category-top, A.category-top:visited {
 	color: #000000;
 	text-decoration: none;
 	}
+A.category-top:hover {
+	color: #f00;
+	text-decoration: none;
+}
+
 A.category-links, A.category-links:visited {
 	color: #004080;
 	text-decoration: none;
 	}
-A.category-subs, A.category-products, A.category-subs:visited, A.category-products:visited {
+A.category-links:hover {
+	color: #f00;
+	text-decoration: none;
+}
+	A.category-subs, A.category-products, A.category-subs:visited, A.category-products:visited {
 	color: #FF0000;
 	text-decoration: none;
 	}

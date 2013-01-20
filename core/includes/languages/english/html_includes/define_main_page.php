@@ -1,4 +1,13 @@
-<p>Sample main page content...</p>
-<p>This content is located in the file at: <code> /languages/english/html_includes/YOUR_TEMPLATE/define_main_page.php</code></p>
-<p>You can quickly edit this content via Admin->Tools->Define Pages Editor, and select define_main_page from the pulldown.</p>
-<p><strong>NOTE: Always backup the files in<code> /languages/english/html_includes/your_template</code></strong></p>
+
+<p><font size="3"></font></p><p><font size="3"><font face="arial, helvetica, sans-serif">It’s finally here! <b>GHS </b>– Globally Harmonized System of Classification and Labeling of Chemicals brings changes to OSHA’s Hazard Communications Standard (29 CFR 1910.1200). These changes are intended to provide greater uniformity in the way that chemicals are labeled and how Safety Data Sheets communicate critical information. The ultimate goal of harmonization is to improve the safety and health of our employees through a clearer and increased understanding of the potential hazards they may face. </font></font></p><p><font size="3"><font face="arial, helvetica, sans-serif">Changes to the Haz Comm standard include Hazard Classification, Safety Data Sheets, Labeling and Training. Don’t wait. Now is the time to begin preparing your employees for new labeling and Safety Data Sheets they will be encountering. Remember, understanding is the key to successful implementation and application.</font></font></p><p><font size="3"><font face="arial, helvetica, sans-serif">Our new GHS courses provide the information you will need to know to insure you, your employees and your organization are prepared. </font></font></p><div style="font-family: arial, helvetica, sans-serif;"><hr /></div><div style="font-family: arial, helvetica, sans-serif;"><font size="3"><br /></font></div><div style="font-family: arial, helvetica, sans-serif;"><font size="3"><font size="3">Feel free to browse through the catalog of courses. </font><font face="arial, helvetica, sans-serif" size="3">Each course allows for a short demonstration--<i>just click on the course title and press the &quot;Start Demo&quot; button</i>. If you are interested in completing the course just add it to your shopping cart as you go. Once you are ready to check out, use the quick and intuitive checkout and payment process powered by PayPal.</font></font></div>
+<p><font size="3"><span style="font-family: arial, helvetica, sans-serif;">If you need reporting or other custom features, please call: 866-866-2174, or via email at: </span><a style="font-family: arial, helvetica, sans-serif;" href="mailto:assistme@compliancefactors.biz">assistme@compliancefactors.biz</a></font></p><p style="font-family: arial, helvetica, sans-serif;"><font size="3">Thanks again for your interest in our course offerings--and please let us know if you have any questions!</font></p><p style="font-family: arial, helvetica, sans-serif;"><font size="3"><span style="font-family: arial, helvetica, sans-serif; font-style: italic;">- Your partner in training, ComplianceFactors!</span></font><br /></p>
+
+
+
+
+
+
+
+
+
+
